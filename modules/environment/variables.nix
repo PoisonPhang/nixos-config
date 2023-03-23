@@ -1,0 +1,4 @@
+{
+  EDITOR="hx";
+  VISUAL="hx"; 
+}
