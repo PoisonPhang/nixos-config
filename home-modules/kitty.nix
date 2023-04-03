@@ -33,5 +33,7 @@
       "alt+p" = "next_layout";
       "alt+shift+p" = "last_used_layout";
     };
+
+    theme = "Catppuccin-Mocha";
   };
 }
