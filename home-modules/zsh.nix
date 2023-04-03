@@ -10,9 +10,10 @@
       icat = "kitty +kitten icat";
       lg = "lazygit";
       ls = "exa";
-      la = "exa -A";
+      la = "exa -las extension";
       nd = "nix develop --command zsh";
       gs = "git status";
+      checkpwr = "upower -i `upower -e | grep 'BAT'`";
     };
     
     initExtra = ''
