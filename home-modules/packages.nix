@@ -31,6 +31,7 @@
     firefox
     starship
     zoxide
+    ltex-ls
   ] ++
   (with pkgs-unstable; [
     vscode

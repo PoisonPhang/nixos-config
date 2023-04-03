@@ -39,6 +39,10 @@
           auto-format = true;
         };
       }
+      {
+        name = "markdown";
+        language-server.command = "ltex-ls";
+      }
     ];
   };
 }
