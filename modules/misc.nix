@@ -22,7 +22,7 @@
     pam.services.lightdm.enableGnomeKeyring = true;
   };
 
-  time.timeZone = "America/Chicago";
+  time.timeZone = "Portugal";
   i18n.defaultLocale = "en_US.UTF-8";
 
   services = {
