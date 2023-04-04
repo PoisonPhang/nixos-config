@@ -32,6 +32,8 @@
     starship
     zoxide
     ltex-ls
+    dunst
+    discord
   ] ++
   (with pkgs-unstable; [
     vscode
