@@ -19,6 +19,9 @@
         carbon-x1-gen-8 = mkNixos "carbon-x1-gen-8" {
           inherit user inputs nixpkgs home-manager system;
         };
+        poisonphang-dt = mkNixos "poisonphang-dt" {
+          inherit user inputs nixpkgs home-manager system;
+        };
       };
     };
 }

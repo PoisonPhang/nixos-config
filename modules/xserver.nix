@@ -1,4 +1,4 @@
-{ ... }:
+{ currentSystemName, ... }:
 {
   services.xserver = {
     enable = true;
@@ -19,6 +19,7 @@
         config = ../xmonad/xmonad.hs;
       };
     };
-
-  };
+  } // (if currentSystemName == "poisonphang-dt" then {
+      videoDrivers = [ "nvidia" ];
+  } else {});
 }
