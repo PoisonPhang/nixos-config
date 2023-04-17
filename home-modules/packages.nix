@@ -34,6 +34,7 @@
     ltex-ls
     dunst
     discord
+    xmobar
   ] ++
   (with pkgs-unstable; [
     vscode
