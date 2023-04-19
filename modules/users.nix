@@ -3,7 +3,7 @@
   users.users.poisonphang = {
     isNormalUser = true;
     description = "Connor Davis";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "docker" "networkmanager" "wheel" ];
     shell = pkgs.zsh;
     home = "/home/poisonphang";
   };

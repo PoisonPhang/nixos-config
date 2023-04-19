@@ -25,6 +25,8 @@
   time.timeZone = "America/Chicago";
   i18n.defaultLocale = "en_US.UTF-8";
 
+  virtualisation.docker.enable = true;
+
   services = {
     gnome.gnome-keyring.enable = true;
     printing.enable = true;
