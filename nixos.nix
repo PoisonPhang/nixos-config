@@ -35,6 +35,7 @@ nixpkgs.lib.nixosSystem rec {
             ./home-modules/zsh.nix
             ./home-modules/flameshot.nix
             ./home-modules/packages.nix
+            ./home-modules/feh.nix
           ];
         };
         # Arguments exposed to each home-module

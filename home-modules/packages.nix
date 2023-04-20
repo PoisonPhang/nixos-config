@@ -35,7 +35,6 @@
     dunst
     discord
     xmobar
-    feh
   ] ++
   (with pkgs-unstable; [
     vscode
