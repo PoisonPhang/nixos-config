@@ -22,4 +22,10 @@
   } // (if currentSystemName == "poisonphang-dt" then {
       videoDrivers = [ "nvidia" ];
   } else {});
+
+  hardware.opengl = {
+    
+  } // (if currentSystemName == "poisonphang-dt" then {
+    enable = true;
+  } else {});
 }
