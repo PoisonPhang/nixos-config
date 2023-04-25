@@ -35,6 +35,7 @@
     dunst
     discord
     xmobar
+    rofi-power-menu
   ] ++
   (with pkgs-unstable; [
     vscode
