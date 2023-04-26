@@ -11,7 +11,12 @@
         cursorline = true;
         color-modes = true;
         scrolloff = 8;
-        soft-wrap.enable = true;
+        text-width = 128;
+        soft-wrap = {
+          enable = true;
+          wrap-at-text-width = true;
+          max-wrap = 32;
+        };
         
         cursor-shape = {
           insert = "bar";
