@@ -43,5 +43,6 @@
     obsidian
     tdesktop
     element-desktop
+    vivaldi
   ]);
 }
