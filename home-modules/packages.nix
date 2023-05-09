@@ -28,7 +28,6 @@
     pinentry-curses
     pick-colour-picker
     bottom
-    firefox
     starship
     zoxide
     ltex-ls
@@ -44,5 +43,6 @@
     tdesktop
     element-desktop
     vivaldi
+    lazygit
   ]);
 }

@@ -30,7 +30,6 @@ nixpkgs.lib.nixosSystem rec {
             ./home-modules/gtk.nix
             ./home-modules/helix.nix
             ./home-modules/kitty.nix
-            ./home-modules/lazygit.nix
             ./home-modules/rofi.nix
             ./home-modules/zsh.nix
             ./home-modules/flameshot.nix
