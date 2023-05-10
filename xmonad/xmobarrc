@@ -1,8 +1,8 @@
 Config { overrideRedirect = False
-       , font     = "xft:iosevka-12"
+       , font     = "xft:iosevka-14"
        , bgColor  = "#1e1e2e"
        , fgColor  = "#cdd6f4"
-       , position = TopW L 90
+       , position = Top
        , commands = [ Run Weather "KMCI"
                         [ "--template", "<weather> <tempC>°C"
                         , "-L", "0"
@@ -12,10 +12,11 @@ Config { overrideRedirect = False
                         , "--high"  , "red"
                         ] 36000
                     , Run Cpu
-                        [ "-L", "3"
+                        [ "--template", " <total>%"
+                        , "-L", "3"
                         , "-H", "50"
-                        , "--high"  , "red"
-                        , "--normal", "green"
+                        , "--high"  , "#f38ba8"
+                        , "--normal", "#a6e3a1"
                         ] 10
                     , Run Alsa "default" "Master"
                         [ "--template", "<volumestatus>"
@@ -23,11 +24,27 @@ Config { overrideRedirect = False
                         , "--"
                         , "--on", ""
                         ]
-                    , Run Memory ["--template", "Mem: <usedratio>%"] 10
+                    , Run Memory ["--template", "󰍛 <usedratio>%"] 10
                     , Run Date "%a %d-%m-%Y <fc=#8be9fd>%H:%M</fc>" "date" 10
+                    , Run Battery        
+                        [ "--template" , "<acstatus>"
+                        , "--Low"      , "10"        -- units: %
+                        , "--High"     , "80"        -- units: %
+                        , "--low"      , "#f38ba8"
+                        , "--normal"   , "#fab387"
+                        , "--high"     , "#a6e3a1"
+
+                        , "--" -- battery specific options
+                            -- discharging status
+                            , "-o"	, "󰁹 <left>% (<timeleft>)"
+                            -- AC "on" status
+                            , "-O"	, "<fc=#dAA520>󰂈 </fc>"
+                            -- charged status
+                            , "-i"	, "<fc=#006000>󰂅 </fc>"
+                        ] 50
                     , Run XMonadLog
                     ]
        , sepChar  = "%"
        , alignSep = "}{"
-       , template = "%XMonadLog% }{ %alsa:default:Master% | %cpu% | %memory% | %EGPF% | %date% "
+       , template = "%XMonadLog% } {   %alsa:default:Master%  %cpu%  %memory%  %EGPF%  %date%  %battery%"
        }
