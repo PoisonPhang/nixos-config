@@ -12,7 +12,7 @@ Config { overrideRedirect = False
                         , "--high"  , "red"
                         ] 36000
                     , Run Cpu
-                        [ "--template", " <total>%"
+                        [ "--template", "  <total>%"
                         , "-L", "3"
                         , "-H", "50"
                         , "--high"  , "#f38ba8"
@@ -36,11 +36,11 @@ Config { overrideRedirect = False
 
                         , "--" -- battery specific options
                             -- discharging status
-                            , "-o"	, "󰁹 <left>% (<timeleft>)"
+                            , "-o"	, "󰁹 <left>%"
                             -- AC "on" status
-                            , "-O"	, "<fc=#dAA520>󰂈 </fc>"
+                            , "-O"	, "<fc=#dAA520>󰂈  <left>%</fc>"
                             -- charged status
-                            , "-i"	, "<fc=#006000>󰂅 </fc>"
+                            , "-i"	, "<fc=#006000>󰂅  <left>%</fc>"
                         ] 50
                     , Run XMonadLog
                     ]
