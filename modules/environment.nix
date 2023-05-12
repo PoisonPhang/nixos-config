@@ -10,6 +10,7 @@
       rxvt_unicode
       xclip
       arc-theme
+      direnv
     ];
 
     variables = import ./environment/variables.nix;
