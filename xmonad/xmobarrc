@@ -3,15 +3,7 @@ Config { overrideRedirect = False
        , bgColor  = "#1e1e2e"
        , fgColor  = "#cdd6f4"
        , position = Top
-       , commands = [ Run Weather "KMCI"
-                        [ "--template", "<weather> <tempC>°C"
-                        , "-L", "0"
-                        , "-H", "25"
-                        , "--low"   , "lightblue"
-                        , "--normal", "#f8f8f2"
-                        , "--high"  , "red"
-                        ] 36000
-                    , Run Cpu
+       , commands = [ Run Cpu
                         [ "--template", "  <total>%"
                         , "-L", "3"
                         , "-H", "50"
@@ -46,5 +38,5 @@ Config { overrideRedirect = False
                     ]
        , sepChar  = "%"
        , alignSep = "}{"
-       , template = "%XMonadLog% } {   %alsa:default:Master%  %cpu%  %memory%  %EGPF%  %date%  %battery%"
+       , template = "%XMonadLog% } {   %alsa:default:Master%  %cpu%  %memory%  %date%  %battery%"
        }
