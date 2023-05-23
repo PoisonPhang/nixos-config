@@ -18,6 +18,10 @@
     };
     
     initExtra = ''
+      function dlnixbuildartifact() {
+        nix copy --to file://$(pwd)/$1 --from ssh-ng://eu.nixbuild.net $2
+      }
+      eval "$(ssh-agent -s)"
       eval "$(starship init zsh)"
       eval "$(zoxide init zsh)"
     '';
