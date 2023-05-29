@@ -1,8 +1,8 @@
-name: {inputs, nixpkgs, home-manager, system, user }:
+name: { inputs, nixpkgs, home-manager, system, user }:
 
 nixpkgs.lib.nixosSystem rec {
   inherit system;
-  
+
   # NixOS System level modules
   modules = [
     ./hardware/${name}.nix
@@ -16,9 +16,10 @@ nixpkgs.lib.nixosSystem rec {
     ./modules/users.nix
     ./modules/xserver.nix
     ./modules/zsh.nix
-    
+
     # home-manager
-    home-manager.nixosModules.home-manager {
+    home-manager.nixosModules.home-manager
+    {
       home-manager = {
         useGlobalPkgs = true;
         useUserPackages = true;
@@ -35,24 +36,23 @@ nixpkgs.lib.nixosSystem rec {
             ./home-modules/flameshot.nix
             ./home-modules/packages.nix
             ./home-modules/feh.nix
+            ./home-modules/zellij.nix
           ];
         };
         # Arguments exposed to each home-module
         extraSpecialArgs = {
-          pkgs-unstable = import inputs.nixpkgs-unstable { inherit system; config.allowUnfree = true; };
           currentSystemName = name;
           currentSystem = system;
           inherit inputs;
         };
       };
     }
-    
+
     # Arguments exposed to each module
     {
       config._module.args = {
         currentSystemName = name;
         currentSystem = system;
-        pkgs-unstable = import inputs.nixpkgs-unstable { inherit system; config.allowUnfree = true; };
       };
     }
   ];

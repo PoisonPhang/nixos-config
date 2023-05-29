@@ -1,48 +1,46 @@
-{ config, lib, pkgs, pkgs-unstable, inputs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 {
   home.packages = with pkgs; [
+    _1password-gui
     bat
-    exa
-    gping
-    gh
-    fd
-    fzf
-    htop
-    jq
-    ripgrep
-    ranger
-    tree
-    watch
-    zip
+    binutils
+    bottom
+    coreutils-full
     curl
     delta
-    pamixer
-    wget
-    coreutils-full
-    binutils
+    discord
+    dunst
+    element-desktop
+    exa
+    fd
+    fzf
+    gh
     gnome3.gnome-control-center
-    xclip
+    gping
+    htop
+    jq
+    lazygit
+    ltex-ls
     neofetch
     nixfmt
+    obsidian
+    pamixer
+    pick-colour-picker
     pinentry
     pinentry-curses
-    pick-colour-picker
-    bottom
-    starship
-    zoxide
-    ltex-ls
-    dunst
-    discord
-    xmobar
+    ranger
+    ripgrep
     rofi-power-menu
-  ] ++
-  (with pkgs-unstable; [
-    vscode
-    _1password-gui
-    obsidian
+    starship
     tdesktop
-    element-desktop
+    tree
     vivaldi
-    lazygit
-  ]);
+    vscode
+    watch
+    wget
+    xclip
+    xmobar
+    zip
+    zoxide
+  ];
 }

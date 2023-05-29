@@ -3,7 +3,7 @@
   programs.helix = {
     enable = true;
     package = inputs.helix.packages.${pkgs.system}.default;
-    
+
     settings = {
       theme = "catppuccin_mocha";
       editor = {
@@ -17,37 +17,44 @@
           wrap-at-text-width = true;
           max-wrap = 32;
         };
-        
+
         cursor-shape = {
           insert = "bar";
           normal = "block";
           select = "underline";
         };
-        
+
         indent-guides = {
           render = true;
         };
       };
     };
-    
-    languages = [
-      {
-        name = "rust";
-        config = {
-          checkOnSave.command = "clippy";
-        };
-      }
 
-      {
-        name = "nix";
-        config = {
-          auto-format = true;
+    languages = {
+      language-server = {
+        rust-analyzer = {
+          config = {
+            checkOnSave.command = "clippy";
+          };
         };
-      }
-      {
-        name = "markdown";
-        language-server.command = "ltex-ls";
-      }
-    ];
+
+        nil = {
+          config = {
+            auto-format = true;
+          };
+        };
+
+        ltex-ls = {
+          command = "ltex-ls";
+        };
+      };
+
+      language = [
+        {
+          name = "markdown";
+          language-servers = [{ name = "ltex-ls"; }];
+        }
+      ];
+    };
   };
 }

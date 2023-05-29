@@ -11,7 +11,7 @@
       defaultSession = "none+xmonad";
       lightdm.enable = true;
     };
-    
+
     windowManager = {
       xmonad = {
         enable = true;
@@ -20,12 +20,10 @@
       };
     };
   } // (if currentSystemName == "poisonphang-dt" then {
-      videoDrivers = [ "nvidia" ];
-  } else {});
+    videoDrivers = [ "nvidia" ];
+  } else { });
 
-  hardware.opengl = {
-    
-  } // (if currentSystemName == "poisonphang-dt" then {
+  hardware.opengl = { } // (if currentSystemName == "poisonphang-dt" then {
     enable = true;
-  } else {});
+  } else { });
 }

@@ -1,11 +1,11 @@
-{ pkgs, pkgs-unstable, ... }:
+{ pkgs, ... }:
 {
   gtk = {
     enable = true;
 
     theme = {
       name = "Catppuccin-Mocha-Standard-Red-Dark";
-      package = pkgs-unstable.catppuccin-gtk.override {
+      package = pkgs.catppuccin-gtk.override {
         accents = [ "red" ];
         size = "standard";
         tweaks = [ "black" ];

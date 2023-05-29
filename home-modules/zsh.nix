@@ -1,10 +1,10 @@
-{...}:
+{ ... }:
 {
-  programs.zsh = { 
+  programs.zsh = {
     enable = true;
     enableCompletion = true;
     enableAutosuggestions = true;
-    enableSyntaxHighlighting = true;    
+    enableSyntaxHighlighting = true;
 
     shellAliases = {
       fzf-nix = "nix-env -qa | fzf";
@@ -16,7 +16,7 @@
       gs = "git status";
       checkpwr = "upower -i `upower -e | grep 'BAT'`";
     };
-    
+
     initExtra = ''
       function dlnixbuildartifact() {
         nix copy --to file://$(pwd)/$1 --from ssh-ng://eu.nixbuild.net $2

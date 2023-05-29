@@ -1,9 +1,8 @@
-{ pkgs-unstable, ... }:
+{ ... }:
 {
   programs.kitty = {
     enable = true;
-    package = pkgs-unstable.kitty;
-    
+
     settings = {
       confirm_os_window_close = 0;
       shell_integration = "enabled";
@@ -11,12 +10,12 @@
       active_tab_title_template = "{title} - {num_windows} {layout_name}";
       tab_activity_symbol = "◉";
     };
-    
+
     font = {
       name = "Comic Code Ligatures";
       size = 16;
     };
-    
+
     keybindings = {
       "kitty_mod+n" = "new_window_with_cwd";
       "super+shift+enter" = "new_os_window_with_cwd";

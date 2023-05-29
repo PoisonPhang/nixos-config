@@ -1,6 +1,6 @@
-{ pkgs-unstable, ...}:
+{ pkgs, ... }:
 {
-  fonts.fonts = with pkgs-unstable; [
+  fonts.fonts = with pkgs; [
     noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
