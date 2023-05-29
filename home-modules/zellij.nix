@@ -4,6 +4,8 @@
     enable = true;
 
     settings = {
+      pane_frames = false;
+      
       theme = "catppuccin-mocha";
       themes = {
         catppuccin-mocha = {
@@ -22,4 +24,6 @@
       };
     };
   };
+
+  home.file.".config/zellij/layouts/dev.kdl".source = ./zellij/layouts/dev.kdl;
 }
