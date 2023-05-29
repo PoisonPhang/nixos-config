@@ -2,7 +2,7 @@ layout {
     pane split_direction="horizontal" {
     }
     pane size=1 borderless=true {
-        plugin location="zellij:compact-bar"
+        plugin location="zellij:status-bar"
     }
 }
 keybinds {
