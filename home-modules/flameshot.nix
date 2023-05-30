@@ -7,7 +7,7 @@
     enable = true;
     settings = {
       General = {
-        savePath = "/home/cor/Screenshots";
+        savePath = "/home/poisonphang/Screenshots";
         showStartupLaunchMessage = false;
         filenamePattern = "%F-%H%M%S";
         startupLaunch = true;
