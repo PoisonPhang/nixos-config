@@ -31,7 +31,6 @@
     ranger
     ripgrep
     rofi-power-menu
-    starship
     tdesktop
     tree
     vivaldi
@@ -41,6 +40,5 @@
     xclip
     xmobar
     zip
-    zoxide
   ];
 }

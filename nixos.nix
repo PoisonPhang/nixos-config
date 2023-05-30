@@ -25,18 +25,20 @@ nixpkgs.lib.nixosSystem rec {
         useUserPackages = true;
         users.poisonphang = {
           imports = [
-            ./home-modules/nixos-misc.nix
+            ./home-modules/feh.nix
+            ./home-modules/flameshot.nix
             ./home-modules/git.nix
             ./home-modules/gpg.nix
             ./home-modules/gtk.nix
             ./home-modules/helix.nix
             ./home-modules/kitty.nix
-            ./home-modules/rofi.nix
-            ./home-modules/zsh.nix
-            ./home-modules/flameshot.nix
+            ./home-modules/nixos-misc.nix
             ./home-modules/packages.nix
-            ./home-modules/feh.nix
+            ./home-modules/rofi.nix
+            ./home-modules/starship.nix
             ./home-modules/zellij.nix
+            ./home-modules/zoxide.nix
+            ./home-modules/zsh.nix
           ];
         };
         # Arguments exposed to each home-module
