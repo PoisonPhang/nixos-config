@@ -5,7 +5,7 @@
 
     settings = {
       pane_frames = false;
-      
+
       theme = "catppuccin-mocha";
       themes = {
         catppuccin-mocha = {
