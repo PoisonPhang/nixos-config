@@ -7,14 +7,15 @@
     enableSyntaxHighlighting = true;
 
     shellAliases = {
+      checkpwr = "upower -i `upower -e | grep 'BAT'`";
+      du = "dust";
       fzf-nix = "nix-env -qa | fzf";
+      gs = "git status";
       icat = "kitty +kitten icat";
+      la = "exa -las extension";
       lg = "lazygit";
       ls = "exa";
-      la = "exa -las extension";
       nd = "nix develop --command zsh";
-      gs = "git status";
-      checkpwr = "upower -i `upower -e | grep 'BAT'`";
     };
 
     initExtra = ''

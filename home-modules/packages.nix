@@ -9,6 +9,7 @@
     curl
     delta
     discord
+    du-dust
     dunst
     element-desktop
     exa
