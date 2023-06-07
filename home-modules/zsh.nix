@@ -7,6 +7,8 @@
     enableSyntaxHighlighting = true;
 
     shellAliases = {
+      cat = "bat";
+      browse = "fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'";
       checkpwr = "upower -i `upower -e | grep 'BAT'`";
       du = "dust";
       fzf-nix = "nix-env -qa | fzf";

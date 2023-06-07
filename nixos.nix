@@ -25,6 +25,7 @@ nixpkgs.lib.nixosSystem rec {
         useUserPackages = true;
         users.poisonphang = {
           imports = [
+            ./home-modules/bat.nix
             ./home-modules/feh.nix
             ./home-modules/flameshot.nix
             ./home-modules/git.nix
