@@ -12,6 +12,7 @@
       fzf-nix = "nix-env -qa | fzf";
       gs = "git status";
       icat = "kitty +kitten icat";
+      kssh = "kitty +kitten ssh";
       la = "exa -las extension";
       lg = "lazygit";
       ls = "exa";
