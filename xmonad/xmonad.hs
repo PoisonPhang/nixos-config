@@ -23,7 +23,8 @@ myConfig = def
   `additionalKeysP`
   [
     ("M-p", spawn "rofi -show drun"),
-    ("M-x", spawn "rofi -show power-menu -modi power-menu:rofi-power-menu")
+    ("M-x", spawn "rofi -show power-menu -modi power-menu:rofi-power-menu"),
+    ("M-s", spawn "flameshot gui")
   ]
 
 myXmobarPP :: PP
