@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
     _1password-gui
@@ -22,6 +22,7 @@
     lazygit
     ltex-ls
     neofetch
+    nil
     nixfmt
     obsidian
     pamixer
