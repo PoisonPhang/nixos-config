@@ -14,7 +14,7 @@ nixpkgs.lib.nixosSystem rec {
     ./modules/networking.nix
     ./modules/nix.nix
     ./modules/users.nix
-    ./modules/xserver.nix
+    ./modules/xserver-${name}.nix
     ./modules/zsh.nix
 
     # home-manager
