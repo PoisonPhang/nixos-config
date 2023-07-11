@@ -46,6 +46,7 @@ nixpkgs.lib.nixosSystem rec {
         extraSpecialArgs = {
           currentSystemName = name;
           currentSystem = system;
+          pkgs-unstable = import inputs.nixpkgs-unstable { inherit system; config.allowUnfree = true; };
           inherit inputs;
         };
       };
@@ -56,6 +57,7 @@ nixpkgs.lib.nixosSystem rec {
       config._module.args = {
         currentSystemName = name;
         currentSystem = system;
+        pkgs-unstable = import inputs.nixpkgs-unstable { inherit system; config.allowUnfree = true; };
       };
     }
   ];

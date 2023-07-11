@@ -1,7 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-unstable, ... }:
 {
   home.packages = with pkgs; [
-    _1password-gui
     binutils
     bottom
     coreutils-full
@@ -41,5 +40,9 @@
     xclip
     xmobar
     zip
-  ];
+  ] ++ (
+    with pkgs-unstable; [
+      _1password-gui
+    ]
+  );
 }
