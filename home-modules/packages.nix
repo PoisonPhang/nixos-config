@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     binutils
     bottom
+    cachix
     coreutils-full
     curl
     delta
