@@ -26,6 +26,7 @@ nixpkgs.lib.nixosSystem rec {
         users.poisonphang = {
           imports = [
             ./home-modules/bat.nix
+            ./home-modules/direnv.nix
             ./home-modules/feh.nix
             ./home-modules/flameshot.nix
             ./home-modules/git.nix
