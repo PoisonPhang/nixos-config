@@ -1,4 +1,4 @@
-{ inputs, pkgs, lib, currentSystemName, ... }:
+{ ... }:
 {
   # Enable sound with pipewire.
   sound.enable = true;
@@ -16,6 +16,9 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
+
+  # ledger support
+  hardware.ledger.enable = true;
 
   security = {
     sudo.wheelNeedsPassword = false;
