@@ -8,6 +8,6 @@
       shell = pkgs.zsh;
       home = "/home/poisonphang";
     };
-  groups.plugdev = {};
+    groups.plugdev = { };
   };
 }
