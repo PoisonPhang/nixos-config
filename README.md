@@ -10,7 +10,7 @@ Several configurations already exist for the various computers that I use.
 
 * `"poisonphang-dt"`
 
-They can be switched to by using the following command inside the root of this repository. Simply switch ` $SYSTEM_NAME` out for the desired configuration.
+They can be switched to by using the following command inside the root of this repository. Simply switch `SYSTEM_NAME` out for the desired configuration.
 
 ```sh
 sudo nixos-rebuild switch --flake .#$SYSTEM_NAME
@@ -18,6 +18,4 @@ sudo nixos-rebuild switch --flake .#$SYSTEM_NAME
 
 ## Adding a new configuration
 
-New configurations are easy to add. However, you must ensure they have a `.nix` file under `./hardware`.
-
-For an example of adding system specific options outside the `./hardware` folder, see `./modules/xserver.nix`.
+New configurations are easy to add. However, you must ensure they have a `.nix` file under `./hardware` and an xserver file under `./modules`.
