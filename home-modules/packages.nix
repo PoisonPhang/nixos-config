@@ -39,6 +39,7 @@
     wget
     xclip
     xmobar
+    yq
     zip
   ] ++ (
     with pkgs-unstable; [
