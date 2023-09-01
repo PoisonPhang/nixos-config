@@ -24,7 +24,6 @@
     neofetch
     nil
     nixfmt
-    obsidian
     pamixer
     pick-colour-picker
     pinentry
@@ -45,6 +44,7 @@
     with pkgs-unstable; [
       _1password-gui
       ledger-live-desktop
+      obsidian
     ]
   );
 }
