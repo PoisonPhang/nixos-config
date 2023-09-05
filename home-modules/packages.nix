@@ -46,6 +46,7 @@
       _1password-gui
       ledger-live-desktop
       obsidian
+      thunderbird
     ]
   );
 }
