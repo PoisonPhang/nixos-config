@@ -30,7 +30,6 @@
     pinentry-curses
     ranger
     ripgrep
-    rocketchat-desktop
     rofi-power-menu
     tdesktop
     tree
