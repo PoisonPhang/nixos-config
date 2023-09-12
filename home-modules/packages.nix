@@ -45,6 +45,8 @@
     with pkgs-unstable; [
       _1password-gui
       dasel
+      ivpn
+      ivpn-service
       ledger-live-desktop
       obsidian
       thunderbird
