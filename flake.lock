@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "_1password-8_10_16": {
+      "locked": {
+        "lastModified": 1695243424,
+        "narHash": "sha256-sopHZapllOPW5NbEMXeh9HWRy3RQoEQk6VzDjYsRL9k=",
+        "owner": "savannidgerinel",
+        "repo": "nixpkgs",
+        "rev": "89af7ca42f26f80fc716e377bc9bd5e323d8bcbb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "savannidgerinel",
+        "ref": "savanni/1password-8.10.16",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "crane": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -215,6 +231,7 @@
     },
     "root": {
       "inputs": {
+        "_1password-8_10_16": "_1password-8_10_16",
         "helix": "helix",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
