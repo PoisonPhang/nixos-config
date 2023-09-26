@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "_1password-8_10_16": {
-      "locked": {
-        "lastModified": 1695243424,
-        "narHash": "sha256-sopHZapllOPW5NbEMXeh9HWRy3RQoEQk6VzDjYsRL9k=",
-        "owner": "savannidgerinel",
-        "repo": "nixpkgs",
-        "rev": "89af7ca42f26f80fc716e377bc9bd5e323d8bcbb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "savannidgerinel",
-        "ref": "savanni/1password-8.10.16",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "crane": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -125,11 +109,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1695248916,
-        "narHash": "sha256-6n/2UOMfgvddhUdNQwj3dxJj4PbxYvAQHxlJVZ2yyK8=",
+        "lastModified": 1695693919,
+        "narHash": "sha256-ik3qDGRspMyx1LP/m/Bc2O9LTpDIeg3x4Y2EJBin1tQ=",
         "owner": "helix-editor",
         "repo": "helix",
-        "rev": "2284bce970e9175fd81851e1616218a6119354fc",
+        "rev": "01e281ce107e57cc1865a0e09e89a8e8c79f2a4e",
         "type": "github"
       },
       "original": {
@@ -199,11 +183,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1695227375,
-        "narHash": "sha256-76WTkeCu3npPZDkay2hB2Dj3cOuCiF0P41dbmXWUKtA=",
+        "lastModified": 1695318763,
+        "narHash": "sha256-FHVPDRP2AfvsxAdc+AsgFJevMz5VBmnZglFUMlxBkcY=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "fe977679240ac2027b151ecca1bc6ce808c2e8af",
+        "rev": "e12483116b3b51a185a33a272bf351e357ba9a99",
         "type": "github"
       },
       "original": {
@@ -215,11 +199,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1695389217,
-        "narHash": "sha256-0aLDi/kg9TKn7RZZ3yXBpyGu1wUrD2d7RdQrFTGWK8Q=",
+        "lastModified": 1695734237,
+        "narHash": "sha256-yLuFoZSKdvW4q2QoW4kqwuR6Zd1qPzWPoRjrGH7/CAk=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "ba429b3a64f02b7539cfb0caa70b1303356aeb54",
+        "rev": "779cfa7df98adbd5ccfbdc67188a6fc12563f5d4",
         "type": "github"
       },
       "original": {
@@ -231,7 +215,6 @@
     },
     "root": {
       "inputs": {
-        "_1password-8_10_16": "_1password-8_10_16",
         "helix": "helix",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
