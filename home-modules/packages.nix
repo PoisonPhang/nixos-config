@@ -43,16 +43,13 @@
     zip
   ] ++ (
     with pkgs-unstable; [
+      _1password-gui
       dasel
       ivpn
       ivpn-service
       ledger-live-desktop
       obsidian
       thunderbird
-    ]
-  ) ++ (
-    with _1password-8_10_16; [
-      _1password-gui
     ]
   );
 }

@@ -16,8 +16,6 @@
       url = "github:nix-community/nixpkgs-fmt";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    _1password-8_10_16.url = "github:savannidgerinel/nixpkgs/savanni/1password-8.10.16";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }:

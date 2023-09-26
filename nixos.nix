@@ -48,7 +48,6 @@ nixpkgs.lib.nixosSystem rec {
           currentSystemName = name;
           currentSystem = system;
           pkgs-unstable = import inputs.nixpkgs-unstable { inherit system; config.allowUnfree = true; };
-          _1password-8_10_16 = import inputs._1password-8_10_16 { inherit system; config.allowUnfree = true; };
           inherit inputs;
         };
       };
