@@ -51,6 +51,7 @@
       ledger-live-desktop
       obsidian
       thunderbird
+      firefox
     ]
   );
 }
