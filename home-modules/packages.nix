@@ -13,6 +13,7 @@
     element-desktop
     exa
     fd
+      firefox
     fzf
     gh
     gnome3.gnome-control-center
@@ -33,7 +34,7 @@
     rofi-power-menu
     tdesktop
     tree
-    vivaldi
+      vivaldi
     vscode
     watch
     wget
@@ -46,13 +47,10 @@
       _1password-gui
       cryptsetup
       dasel
-      etcher
-      firefox
       ivpn
       ivpn-service
       ledger-live-desktop
       obsidian
-      thunderbird
     ]
   );
 }
