@@ -46,12 +46,13 @@
       _1password-gui
       cryptsetup
       dasel
+      etcher
+      firefox
       ivpn
       ivpn-service
       ledger-live-desktop
       obsidian
       thunderbird
-      firefox
     ]
   );
 }
