@@ -18,4 +18,7 @@ sudo nixos-rebuild switch --flake .#$SYSTEM_NAME
 
 ## Adding a new configuration
 
-New configurations are easy to add. However, you must ensure they have a `.nix` file under `./hardware` and an xserver file under `./modules`.
+New configurations are easy to add. However, you must ensure they have a `.nix` file for:
+- `hardware/`
+- A xserver file under `modules/`
+- A boot file under `modules/boot/`

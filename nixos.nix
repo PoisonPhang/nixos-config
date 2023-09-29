@@ -6,7 +6,7 @@ nixpkgs.lib.nixosSystem rec {
   # NixOS System level modules
   modules = [
     ./hardware/${name}.nix
-    ./modules/boot.nix
+    ./modules/boot/${name}.nix
     ./modules/nixpkgs.nix
     ./modules/misc.nix
     ./modules/environment.nix
