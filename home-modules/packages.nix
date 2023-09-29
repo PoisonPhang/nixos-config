@@ -44,6 +44,7 @@
   ] ++ (
     with pkgs-unstable; [
       _1password-gui
+      cryptsetup
       dasel
       ivpn
       ivpn-service
