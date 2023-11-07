@@ -1,4 +1,4 @@
-{ pkgs, pkgs-unstable, _1password-8_10_16, ... }:
+{ pkgs, pkgs-unstable, ... }:
 {
   home.packages = with pkgs; [
     binutils
@@ -13,7 +13,6 @@
     element-desktop
     exa
     fd
-      firefox
     fzf
     gh
     gnome3.gnome-control-center
@@ -34,7 +33,7 @@
     rofi-power-menu
     tdesktop
     tree
-      vivaldi
+    vivaldi
     vscode
     watch
     wget
