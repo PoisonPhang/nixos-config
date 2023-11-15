@@ -43,7 +43,6 @@
     zip
   ] ++ (
     with pkgs-unstable; [
-      _1password-gui
       cryptsetup
       dasel
       ivpn

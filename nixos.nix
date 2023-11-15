@@ -41,6 +41,7 @@ nixpkgs.lib.nixosSystem rec {
             ./home-modules/zellij.nix
             ./home-modules/zoxide.nix
             ./home-modules/zsh.nix
+            ./home-modules/onepassword.nix
           ];
         };
         # Arguments exposed to each home-module
