@@ -13,6 +13,7 @@ nixpkgs.lib.nixosSystem rec {
     ./modules/fonts.nix
     ./modules/networking.nix
     ./modules/nix.nix
+    ./modules/onepassword.nix
     ./modules/users.nix
     ./modules/xserver-${name}.nix
     ./modules/zsh.nix
@@ -41,7 +42,6 @@ nixpkgs.lib.nixosSystem rec {
             ./home-modules/zellij.nix
             ./home-modules/zoxide.nix
             ./home-modules/zsh.nix
-            ./home-modules/onepassword.nix
           ];
         };
         # Arguments exposed to each home-module
