@@ -49,6 +49,7 @@
       ivpn-service
       ledger-live-desktop
       obsidian
+      telegram-desktop
     ]
   );
 }
