@@ -11,7 +11,7 @@
     du-dust
     dunst
     element-desktop
-    exa
+    eza
     fd
     fzf
     gh

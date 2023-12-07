@@ -4,7 +4,7 @@
     enable = true;
     enableCompletion = true;
     enableAutosuggestions = true;
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
 
     shellAliases = {
       cat = "bat";
@@ -16,9 +16,9 @@
       gs = "git status";
       icat = "kitty +kitten icat";
       kssh = "kitty +kitten ssh";
-      la = "exa -las extension";
+      la = "eza -las extension";
       lg = "lazygit";
-      ls = "exa";
+      ls = "eza";
       nd = "nix develop --command zsh";
     };
 
