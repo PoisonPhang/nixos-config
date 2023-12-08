@@ -45,6 +45,7 @@
     with pkgs-unstable; [
       cryptsetup
       dasel
+      element-desktop
       ivpn
       ivpn-service
       ledger-live-desktop
