@@ -10,7 +10,6 @@
     discord
     du-dust
     dunst
-    element-desktop
     eza
     fd
     fzf
@@ -25,7 +24,6 @@
     nil
     nixfmt
     pamixer
-    pick-colour-picker
     pinentry
     pinentry-curses
     ranger
@@ -34,7 +32,6 @@
     tdesktop
     tree
     vivaldi
-    vscode
     watch
     wget
     xclip
@@ -46,10 +43,10 @@
       cryptsetup
       dasel
       element-desktop
+      glow
       ivpn
       ivpn-service
       ledger-live-desktop
-      obsidian
     ]
   );
 }
