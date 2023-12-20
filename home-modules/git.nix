@@ -19,6 +19,12 @@
 
       # Fix go private dependency fetching by using SSH instead of HTTPS
       "url \"ssh://git@github.com/\"".insteadOf = "https://github.com/";
+
+      core.pager = "delta";
+      interactive.diffFilter = "delta --color-only";
+      delta.navigate = true;
+      merge.conflictstyle = "diff3";
+      diff.colorMoved = "default";
     };
   };
 }
