@@ -48,7 +48,12 @@ nixpkgs.lib.nixosSystem rec {
         extraSpecialArgs = {
           currentSystemName = name;
           currentSystem = system;
-          pkgs-unstable = import inputs.nixpkgs-unstable { inherit system; config.allowUnfree = true; };
+          pkgs-unstable = import inputs.nixpkgs-unstable {
+            inherit system; config.allowUnfree = true;
+            config.permittedInsecurePackages = [
+              "electron-25.9.0"
+            ];
+          };
           inherit inputs;
         };
       };
@@ -59,7 +64,12 @@ nixpkgs.lib.nixosSystem rec {
       config._module.args = {
         currentSystemName = name;
         currentSystem = system;
-        pkgs-unstable = import inputs.nixpkgs-unstable { inherit system; config.allowUnfree = true; };
+        pkgs-unstable = import inputs.nixpkgs-unstable {
+          inherit system; config.allowUnfree = true;
+          config.permittedInsecurePackages = [
+            "electron-25.9.0"
+          ];
+        };
       };
     }
   ];
