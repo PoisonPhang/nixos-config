@@ -47,6 +47,7 @@
       ivpn
       ivpn-service
       ledger-live-desktop
+      nushell
       obsidian
     ]
   );
