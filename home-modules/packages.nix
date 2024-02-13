@@ -49,6 +49,7 @@
       ledger-live-desktop
       nushell
       obsidian
+      spotify
     ]
   );
 }
