@@ -7,9 +7,9 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      cat = "bat";
-      browse = "fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'";
       bathelp = "bat --plain --language=help";
+      browse = "fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'";
+      cat = "bat";
       checkpwr = "upower -i `upower -e | grep 'BAT'`";
       du = "dust";
       fzf-nix = "nix-env -qa | fzf";
@@ -20,6 +20,7 @@
       lg = "lazygit";
       ls = "eza";
       nd = "nix develop --command zsh";
+      tree = "exa -T";
     };
 
     initExtra = ''

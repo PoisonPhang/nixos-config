@@ -30,7 +30,6 @@
     ripgrep
     rofi-power-menu
     tdesktop
-    tree
     vivaldi
     watch
     wget
