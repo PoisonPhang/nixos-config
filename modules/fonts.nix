@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-unstable, ... }:
 {
   fonts.packages = with pkgs; [
     noto-fonts
@@ -9,5 +9,7 @@
     fira-code-symbols
     jetbrains-mono
     (nerdfonts.override { fonts = [ "SpaceMono" ]; })
-  ];
+  ] ++ (with pkgs-unstable; [
+    open-dyslexic
+  ]);
 }
