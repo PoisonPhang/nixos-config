@@ -1,13 +1,14 @@
 { pkgs, pkgs-unstable, ... }:
 {
   fonts.packages = with pkgs; [
+    fira-code
+    fira-code-symbols
+    ibm-plex
+    jetbrains-mono
     noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
-    ibm-plex
-    fira-code
-    fira-code-symbols
-    jetbrains-mono
+    vollkorn
     (nerdfonts.override { fonts = [ "SpaceMono" ]; })
   ] ++ (with pkgs-unstable; [
     open-dyslexic
