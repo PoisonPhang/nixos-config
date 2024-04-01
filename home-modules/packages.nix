@@ -12,6 +12,7 @@
     dunst
     eza
     fd
+    file
     fzf
     gh
     gnome3.gnome-control-center
@@ -49,6 +50,7 @@
       nushell
       obsidian
       spotify
+      yazi
     ]
   );
 }
