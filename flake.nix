@@ -10,8 +10,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    helix.url = "github:helix-editor/helix";
-
     nixpkgs-fmt = {
       url = "github:nix-community/nixpkgs-fmt";
       inputs.nixpkgs.follows = "nixpkgs";
