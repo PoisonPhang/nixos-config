@@ -19,7 +19,6 @@
     gping
     htop
     jq
-    lazygit
     ltex-ls
     neofetch
     nil
