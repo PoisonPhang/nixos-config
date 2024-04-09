@@ -35,6 +35,7 @@ nixpkgs.lib.nixosSystem rec {
             ./home-modules/gtk.nix
             ./home-modules/helix.nix
             ./home-modules/kitty.nix
+            ./home-modules/lazygit.nix
             ./home-modules/nixos-misc.nix
             ./home-modules/packages.nix
             ./home-modules/rofi.nix

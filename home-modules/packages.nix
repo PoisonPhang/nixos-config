@@ -29,6 +29,7 @@
     ranger
     ripgrep
     rofi-power-menu
+    slack
     tdesktop
     vivaldi
     watch
