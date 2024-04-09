@@ -50,9 +50,6 @@ nixpkgs.lib.nixosSystem rec {
           currentSystem = system;
           pkgs-unstable = import inputs.nixpkgs-unstable {
             inherit system; config.allowUnfree = true;
-            config.permittedInsecurePackages = [
-              "electron-25.9.0"
-            ];
           };
           inherit inputs;
         };
@@ -66,9 +63,6 @@ nixpkgs.lib.nixosSystem rec {
         currentSystem = system;
         pkgs-unstable = import inputs.nixpkgs-unstable {
           inherit system; config.allowUnfree = true;
-          config.permittedInsecurePackages = [
-            "electron-25.9.0"
-          ];
         };
       };
     }
