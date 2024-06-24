@@ -24,7 +24,6 @@
     nil
     nixfmt
     pamixer
-    pinentry
     pinentry-curses
     ranger
     ripgrep

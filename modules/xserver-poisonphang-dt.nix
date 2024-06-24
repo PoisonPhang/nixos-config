@@ -1,25 +1,32 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 {
-  services.xserver = {
-    enable = true;
-    layout = "us";
-    xkbVariant = "";
+  services = {
+    xserver = {
+      enable = true;
+      xkb = {
+        layout = "us";
+        variant = "";
+      };
 
-    desktopManager.gnome.enable = true;
+      desktopManager.gnome.enable = true;
+
+      displayManager = {
+        lightdm.enable = true;
+      };
+
+      windowManager = {
+        xmonad = {
+          enable = true;
+          enableContribAndExtras = true;
+          config = ../xmonad/xmonad.hs;
+        };
+      };
+      videoDrivers = [ "nvidia" ];
+    };
 
     displayManager = {
       defaultSession = "none+xmonad";
-      lightdm.enable = true;
     };
-
-    windowManager = {
-      xmonad = {
-        enable = true;
-        enableContribAndExtras = true;
-        config = ../xmonad/xmonad.hs;
-      };
-    };
-    videoDrivers = [ "nvidia" ];
   };
 
   hardware = {
