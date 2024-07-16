@@ -49,7 +49,7 @@
       nushell
       obsidian
       spotify
-      yazi    
+      yazi
     ]
   );
 }
