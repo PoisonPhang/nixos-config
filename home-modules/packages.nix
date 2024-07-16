@@ -30,7 +30,6 @@
     rofi-power-menu
     slack
     tdesktop
-    vivaldi
     watch
     wget
     xclip
@@ -43,13 +42,14 @@
       dasel
       element-desktop
       glow
+      google-chrome
       ivpn
       ivpn-service
       ledger-live-desktop
       nushell
       obsidian
       spotify
-      yazi
+      yazi    
     ]
   );
 }
