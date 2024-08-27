@@ -3,6 +3,7 @@
   nix = {
     settings = {
       sandbox = "relaxed";
+      trusted-users = [ "poisonphang" ];
       substituters = [
         "https://nix-community.cachix.org/"
         "https://mitchellh-nixos-config.cachix.org"
