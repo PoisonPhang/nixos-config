@@ -15,7 +15,7 @@
     file
     fzf
     gh
-    gnome3.gnome-control-center
+    gnome-control-center
     gping
     htop
     jq

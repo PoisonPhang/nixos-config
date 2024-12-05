@@ -6,7 +6,7 @@
     ibm-plex
     jetbrains-mono
     noto-fonts
-    noto-fonts-cjk
+    noto-fonts-cjk-sans
     noto-fonts-emoji
     vollkorn
     comic-neue

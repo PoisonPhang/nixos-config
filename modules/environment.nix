@@ -7,7 +7,6 @@
       gnumake
       killall
       niv
-      rxvt_unicode
       xclip
       arc-theme
       direnv
