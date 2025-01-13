@@ -43,6 +43,7 @@ nixpkgs.lib.nixosSystem rec {
             ./home-modules/zellij.nix
             ./home-modules/zoxide.nix
             ./home-modules/zsh.nix
+            ./home-modules/ghostty.nix
           ];
         };
         # Arguments exposed to each home-module
