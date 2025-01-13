@@ -18,7 +18,7 @@ import XMonad.Hooks.EwmhDesktops
 myConfig = def 
   {
     modMask = mod4Mask,
-    terminal = "kitty"
+    terminal = "ghostty"
   }
   `additionalKeysP`
   [
