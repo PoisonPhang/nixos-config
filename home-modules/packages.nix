@@ -38,6 +38,7 @@
     zip
   ] ++ (
     with pkgs-unstable; [
+      _1password-cli
       cryptsetup
       dasel
       element-desktop
