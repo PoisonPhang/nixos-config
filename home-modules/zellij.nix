@@ -6,6 +6,7 @@
 
     settings = {
       pane_frames = false;
+      show_release_notes = false;
 
       theme = "catppuccin-mocha";
       themes = {
