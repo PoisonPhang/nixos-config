@@ -2,6 +2,6 @@
   EDITOR = "hx";
   VISUAL = "hx";
   PAGER = "bat";
-  DEFAULT_BROWSER = "librewolf";
-  BROWSER = "librewolf";
+  DEFAULT_BROWSER = "chorme";
+  BROWSER = "chorme";
 }
