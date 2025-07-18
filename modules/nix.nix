@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   nix = {
-    package = pkgs.nixVersions.nix_2_25;
+    package = pkgs.nixVersions.nix_2_18;
     optimise.automatic = true;
     gc = {
       automatic = true;
