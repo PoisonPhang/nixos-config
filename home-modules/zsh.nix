@@ -14,8 +14,6 @@
       du = "dust";
       fzf-nix = "nix-env -qa | fzf";
       gs = "git status";
-      icat = "kitty +kitten icat";
-      kssh = "kitty +kitten ssh";
       la = "eza -las extension";
       lg = "lazygit";
       ls = "eza";
@@ -23,7 +21,7 @@
       tree = "exa -T";
     };
 
-    initExtra = ''
+    initContent = ''
       function dlnixbuildartifact() {
         nix copy --to file://$(pwd)/$1 --from ssh-ng://eu.nixbuild.net $2
       }

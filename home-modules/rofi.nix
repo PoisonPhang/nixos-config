@@ -3,7 +3,7 @@
   programs.rofi = {
     enable = true;
 
-    terminal = "kitty";
+    terminal = "ghostty";
     theme = "./catppuccin-mocha.rasi";
 
     plugins = with pkgs; [ rofi-emoji rofi-calc rofi-power-menu ];
@@ -12,7 +12,7 @@
       modi = "run,drun,window";
       icon-theme = "Oranchelo";
       show-icons = true;
-      terminal = "kitty";
+      terminal = "ghostty";
       drun-display-format = "{icon} {name}";
       location = 0;
       disable-history = false;

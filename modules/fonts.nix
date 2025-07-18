@@ -10,7 +10,7 @@
     noto-fonts-emoji
     vollkorn
     comic-neue
-    (nerdfonts.override { fonts = [ "SpaceMono" ]; })
+    nerd-fonts.space-mono
   ] ++ (with pkgs-unstable; [
     open-dyslexic
   ]);
