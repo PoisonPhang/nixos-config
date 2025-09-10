@@ -50,7 +50,6 @@
       librewolf
       nushell
       obsidian
-      spotify
       yazi
     ]
   );
